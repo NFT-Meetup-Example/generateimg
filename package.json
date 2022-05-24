@@ -1,0 +1,14 @@
+{
+  "name": "generateimg",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "QUIC-PRO Inc.",
+  "license": "MIT",
+  "dependencies": {
+    "jimp": "^0.16.1"
+  }
+}
