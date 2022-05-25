@@ -14,7 +14,7 @@ async function main() {
     const pass = []; // mass of images in folders
     for (let i = 0; i < dirInDir.length; i++) {
         pass[i] = fs.readdirSync(dirInDir[i], { withFileTypes: true })
-         .filter((item) => !item.isDirectory())
+         .filter((item) => !item.isDirectory() && item.name.includes('.png'))
          .map((item) => dirInDir[i] + item.name);
     }
 
